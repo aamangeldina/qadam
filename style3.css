@@ -1,0 +1,173 @@
+body{
+    margin:auto 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-weight:700;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+
+.container-fluid{
+    background-image: linear-gradient(to bottom, #fb938f, #e7a257, #fb938f, #fdbb75);
+}
+
+
+
+/*NAV*/
+.container-header{
+    background-color: rgba(255, 228, 196, 0.651);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    left: 0;
+    z-index: 20;
+    padding: 0px 10px;
+}
+
+/*herobox*/
+.btn-1{
+    background-color:  #fa7570;
+    width: 200px;
+}
+
+.btn-2{
+    background-color:  bisque;
+    width: 200px;
+}
+
+.btn-3{
+    margin-left: auto;
+    background-color:  #fa7570;
+    width: 200px;
+}
+
+.btn-3 a:hover{
+    text-decoration: none;
+}
+
+.herobox img{
+    display:grid;
+    margin:30px 10px;
+    justify-items: center;
+    width: 100%;
+}
+
+/*GRID*/
+
+.grid-wrapper{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+}
+
+
+.box > img{
+    width:40%;
+    padding-bottom: 10px;
+}
+
+.box{
+    display:grid;
+    padding:50px;
+    margin:0px 10px;
+    justify-items: center;
+}
+
+/* months */
+
+.months{
+    margin:0px;
+    transition: all 1s;
+}
+.months:hover{
+    transform: scale(1.1);
+}
+
+.months > img{
+    width:90%;
+    padding: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+/* last month */
+
+.my_two_columns img{
+    width: 80%;
+}
+
+
+/* month_html */
+
+.mybg{
+    background-color: #fdbb75;
+}
+
+.mybg1{
+    background-color: #fdaa51;
+    margin-top: 50px;
+}
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .grid-wrapper{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+}
+
+
+.box > img{
+    width:40%;
+    padding-bottom: 10px;
+}
+
+.box{
+    display:grid;
+    padding:50px;
+    margin:0px 10px;
+    justify-items: center;
+} 
+.hide{
+    display: block;
+}
+
+.months > img{
+    width:90%;
+    padding: 10px;
+}
+
+.my_two_columns img{
+    display:grid;
+    padding:50px;
+    margin:0px 10px;
+    justify-items: center;
+    width: 80%;
+}
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
